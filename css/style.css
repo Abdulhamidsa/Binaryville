@@ -14,7 +14,6 @@
 }
 html {
   scroll-behavior: smooth;
-
   font-family: "Roboto Slab", serif;
 }
 body {
@@ -167,7 +166,7 @@ figcaption {
   background-color: var(--white);
 }
 footer {
-  background: url("/img/Binaryville-footer.png");
+  background: url("../img/Binaryville-footer.png");
   background-repeat: no-repeat;
   height: 300px;
   object-fit: cover;
