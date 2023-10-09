@@ -1,8 +1,5 @@
-﻿/* Media query for smartphones (e.g., screens up to 768px wide) */
+﻿/* MOBILE */
 @media screen and (max-width: 650px) {
-  body {
-    overflow-x: hidden;
-  }
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -18,9 +15,7 @@
     height: 100dvh;
     left: 100%;
     transition: left 0.3s ease;
-    overflow: hidden;
   }
-  /* Styles for the mobile menu */
   #navbar ul {
     flex-direction: column;
     align-items: center;
@@ -29,17 +24,12 @@
     padding: 1rem;
     border-radius: 0;
     height: 100%;
-    overflow: hidden;
     width: 100vw;
     width: 100dvw;
   }
-
-  /* Styles for header */
   header {
     justify-content: space-between;
   }
-
-  /* Styles for close and hamburger icons */
   .close,
   .hamburger {
     display: flex;
@@ -48,7 +38,6 @@
     max-width: 50px;
     width: 100%;
   }
-
   .close {
     top: 50px;
     right: 10px;
@@ -61,16 +50,13 @@
   .secondimg {
     grid-column: span 1;
   }
-
   .mainimg {
     grid-column: span 1;
     grid-row: 1/4;
   }
-
   .products {
     grid-row: 7;
   }
-
   figure {
     display: flex;
     justify-content: center;
@@ -80,7 +66,7 @@
     margin: auto;
   }
 }
-
+/* TABLET */
 @media screen and (min-width: 650px) and (max-width: 1024px) {
   .grid {
     display: grid;
@@ -109,6 +95,7 @@
     grid-column: span 2;
   }
 }
+/* TABLET SPECIAL */
 @media screen and (max-width: 850px) {
   .row li {
     flex: 0 1 calc(50% - 10px);
@@ -118,6 +105,7 @@
     margin: auto;
   }
 }
+/* MOBILE SPECIAL */
 @media screen and (max-width: 550px) {
   .row li {
     flex: 0 1 calc(100% - 10px);

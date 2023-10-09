@@ -2,7 +2,9 @@
   --blue: #00bff3;
   --red: #ff715b;
   --yellow: #f0c808;
+  --gradient-orange: #ffa500a4;
   --dark-grey: #4c5b5c;
+  --light-grey: #ffffff7e;
   --white: #ffffff;
 }
 * {
@@ -15,6 +17,21 @@
 html {
   scroll-behavior: smooth;
   font-family: "Roboto Slab", serif;
+  scrollbar-width: thin;
+  scrollbar-color: var(--white);
+  scrollbar-face-color: var(--white);
+  scrollbar-track-color: var(--dark-grey);
+}
+html::-webkit-scrollbar {
+  width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--dark-grey);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
 }
 body {
   max-width: 1200px;
@@ -76,8 +93,7 @@ header {
   margin-bottom: 5rem;
 }
 .grid figure figcaption {
-  color: red;
-  background-color: rgba(255, 255, 255, 0.493);
+  background-color: var(--light-grey);
   position: absolute;
   bottom: 7%;
   width: 100%;
@@ -115,7 +131,6 @@ figcaption {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +150,7 @@ figcaption {
   padding: 3rem;
   border-radius: 100%;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 165, 0, 0.644782913165266) 100%);
+  background: linear-gradient(180deg, var(--white) 0%, var(--gradient-orange) 100%);
 }
 .row figcaption {
   color: var(--red);
@@ -144,27 +159,7 @@ figcaption {
   font-weight: 900;
   font-size: calc(10px + 1vw);
 }
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
-}
 
-* {
-  scrollbar-face-color: #888;
-  scrollbar-track-color: #f1f1f1;
-}
-
-*::-webkit-scrollbar {
-  width: 15px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--dark-grey);
-}
-
-*::-webkit-scrollbar-track {
-  background-color: var(--white);
-}
 footer {
   background: url("../img/Binaryville-footer.png");
   background-repeat: no-repeat;
