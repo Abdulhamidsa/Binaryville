@@ -1,0 +1,178 @@
+﻿:root {
+  --blue: #00bff3;
+  --red: #ff715b;
+  --yellow: #f0c808;
+  --dark-grey: #4c5b5c;
+  --white: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+
+  font-family: "Roboto Slab", serif;
+}
+body {
+  max-width: 1200px;
+  margin: auto;
+  overflow-x: hidden;
+}
+h2,
+h1 {
+  color: var(--red);
+  margin: 4rem 0 1rem 0;
+  font-size: calc(25px + 2vw);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+  padding: 1rem;
+  border-radius: 50px;
+  width: 60vw;
+  width: 60dvw;
+  max-width: 950px;
+}
+#navbar li a {
+  color: var(--white);
+}
+.logo {
+  max-width: 250px;
+  width: 50%;
+}
+.hamburger,
+.close {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 5rem;
+}
+.grid figure figcaption {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.493);
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+}
+.grid figure:first-of-type figcaption {
+  bottom: 20%;
+  height: 10rem;
+  line-height: 10rem;
+}
+.grid figure figcaption a {
+  color: var(--blue);
+  font-weight: 900;
+  font-size: calc(25px + 1vw);
+}
+.grid figure figcaption a:hover {
+  color: var(--yellow);
+  font-size: calc(27px + 1vw);
+  transition: 100ms ease;
+}
+.secondimg {
+  grid-column: 2/4;
+}
+.mainimg {
+  grid-row: 1/3;
+}
+figure {
+  position: relative;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.row li {
+  flex: 0 1 calc(33.33% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.row figure {
+  width: 90%;
+  margin: auto;
+}
+.row figure img {
+  padding: 3rem;
+  border-radius: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 165, 0, 0.644782913165266) 100%);
+}
+.row figcaption {
+  color: var(--red);
+  position: absolute;
+  bottom: 15px;
+  font-weight: 900;
+  font-size: calc(10px + 1vw);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+* {
+  scrollbar-face-color: #888;
+  scrollbar-track-color: #f1f1f1;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--dark-grey);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+footer {
+  background: url("/img/Binaryville-footer.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  object-fit: cover;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  font-size: calc(12px + 1vw);
+}
